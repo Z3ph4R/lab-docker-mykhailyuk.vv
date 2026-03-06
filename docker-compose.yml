@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  npm-check:
+    build: .
+    container_name: lab-npm-check
+    tty: true
+    stdin_open: true
