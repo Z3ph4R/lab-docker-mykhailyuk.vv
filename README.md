@@ -61,10 +61,6 @@ unpacking to docker.io/library/... done
 [+] build lab-docker-mykhailyuk-vv-npm-check Built
 35.2s
 
-$ docker compose run --rm npm-check npm -v
+```docker compose run --rm npm-check npm -v``` Версія: 11.11.0
 
-11.11.0
-
-$ docker compose run --rm npm-check node --version
-
-v25.8.0
+```docker compose run --rm npm-check node --version``` Версія: v25.8.0
