@@ -38,3 +38,33 @@ For more examples and ideas, visit:
 Репозиторій: https://github.com/Zsph4K/lab-docker-mykhailyuk.vv
 
 ## Вправа 3 — docker-compose + latest npm
+
+$ docker compose build
+
+# Ключові рядки з процесу побудови:
+[2/3] RUN npm install -g npm@latest
+9.518 changed 10 packages in 9s
+9.518 15 packages are looking for funding
+9.518 run `npm fund` for details
+DONE 13.3s
+
+[3/3] WORKDIR /app
+DONE 0.1s
+
+[+] Building ... (тут може бути повний час побудови)
+exporting to image
+exporting layers 1.1s done
+exporting manifest sha256:... done
+naming to docker.io/library/lab-docker-mykhailyuk-vv-npm-check:latest done
+unpacking to docker.io/library/... done
+
+[+] build lab-docker-mykhailyuk-vv-npm-check Built
+35.2s
+
+$ docker compose run --rm npm-check npm -v
+
+11.11.0
+
+$ docker compose run --rm npm-check node --version
+
+v25.8.0
