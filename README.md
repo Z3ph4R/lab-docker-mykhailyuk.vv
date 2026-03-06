@@ -39,9 +39,10 @@ For more examples and ideas, visit:
 
 ## Вправа 3 — docker-compose + latest npm
 
-$ docker compose build
+```docker compose build``` 
 
-# Ключові рядки з процесу побудови:
+Ключові рядки з процесу побудови:
+
 [2/3] RUN npm install -g npm@latest
 9.518 changed 10 packages in 9s
 9.518 15 packages are looking for funding
